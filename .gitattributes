@@ -1,2 +1,2 @@
-* linguist-detectable=false
+*.{js,ts,json} linguist-detectable=false
 public/* linguist-detectable=false
