@@ -6,11 +6,20 @@ In comparison with the as-is project bootstrapped directly with the `create-next
 
 - TypeScript is utilised in this project — this project is bootstrapped with the `--typescript` flag, making your code more opinionated through TypeScript's compiler.
 - ESLint is automatically configured with `eslint-config-prettier` — this provides a hybrid configuration of ESLint and Prettier that work hand-in-hand to ensure the best formatting and structure of your code.
-- ESLint is configured with Husky via `lint-staged` — this allows you to commit your files without worrying about running ESLint manually beforehand; before committing, `lint-staged` will run ESLint to fix any fixable errors in your code.
 
 > **Important!**
 >
 > If you wish to run the `lint` script manually, you will need to pass in the path to the directory or file you wish for ESLint to lint. This is different from the usual behaviour, which invokes `next lint` that automatically passes in the appropriate paths to lint.
+
+- ESLint is configured with Husky via `lint-staged` — this allows you to commit your files without worrying about running ESLint manually beforehand; before committing, `lint-staged` will run ESLint to fix any fixable errors in your code.
+
+> **Important!**
+>
+> The default package manager assumed here is Yarn. If you are using `npm`, you may need to change the Husky pre-commit (`.husky/_/pre-commit`) hook to use `npm` by replacing `yarn` with `npx` like so:
+>
+> ```bash
+> npx lint-staged
+> ```
 
 ## Getting Started
 
