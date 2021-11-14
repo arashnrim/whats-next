@@ -21,6 +21,8 @@ In comparison with the as-is project bootstrapped directly with the `create-next
 > npx lint-staged
 > ```
 
+- The `berry` version of Yarn has been employed as the default package manager. To learn more, visit [the documentation for Yarn](https://yarnpkg.com).
+
 ## Getting Started
 
 First, run the development server:
