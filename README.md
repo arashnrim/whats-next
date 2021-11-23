@@ -23,6 +23,12 @@ In comparison with the as-is project bootstrapped directly with the `create-next
 
 - The `berry` version of Yarn has been employed as the default package manager. To learn more, visit [the documentation for Yarn](https://yarnpkg.com).
 
+- If using [Vercel](https://vercel.com), the [vercel.json](https://github.com/arashnrim/whats-next/blob/main/vercel.json) file silences the bot. You will not receive notifications from the bot as it will not comment on commits and pull requests.
+
+> **About vercel.json**
+>
+> This is definitely a personal preference that I have, since I'd prefer not having Vercel commenting everywhere when I can easily access detailed build information on the Vercel dashboard. If you wish to revert this decision, simply remove `vercel.json` on your end.
+
 ## Getting Started
 
 First, run the development server:
