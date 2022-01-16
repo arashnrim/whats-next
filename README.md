@@ -11,7 +11,7 @@ In comparison with the as-is project bootstrapped directly with the `create-next
 >
 > If you wish to run the `lint` script manually, you will need to pass in the path to the directory or file you wish for ESLint to lint. This is different from the usual behaviour, which invokes `next lint` that automatically passes in the appropriate paths to lint.
 
-- ESLint is configured with Husky via `lint-staged` — this allows you to commit your files without worrying about running ESLint manually beforehand; before committing, `lint-staged` will run ESLint to fix any fixable errors in your code.
+- ESLint is configured with Husky via `lint-staged` — this allows you to commit your files without worrying about running ESLint manually beforehand; before committing, `lint-staged` will run ESLint to fix any fixable errors in your code. To ensure Husky is working, be sure to run Husky (`yarn husky` or equivalent) beforehand.
 
 > **Important!**
 >
@@ -28,6 +28,8 @@ In comparison with the as-is project bootstrapped directly with the `create-next
 > **About vercel.json**
 >
 > This is definitely a personal preference that I have, since I'd prefer not having Vercel commenting everywhere when I can easily access detailed build information on the Vercel dashboard. If you wish to revert this decision, simply remove `vercel.json` on your end.
+
+- If using [GitHub](https://github.com), the [.gitattributes](https://github.com/arashnrim/whats-next/blob/main/.gitattributes) file configures [Linguist](https://github.com/github/linguist) to ignore all files but the files in `src/`. This makes the repository's detected languages list more accurate. If you wish to revert this decision, simply remove `.gitattributes` on your end.
 
 ## Getting Started
 
