@@ -2,7 +2,7 @@
 
 This is a modified [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-In comparison with the as-is project bootstrapped directly with the `create-next-app` command, the What's Next? template includes the following modifications:
+In comparison to the as-is project bootstrapped directly with the `create-next-app` command, the What's Next? template includes the following modifications:
 
 - TypeScript is utilised in this project — this project is bootstrapped with the `--typescript` flag, making your code more opinionated through TypeScript's compiler.
 - ESLint is automatically configured with `eslint-config-prettier` — this provides a hybrid configuration of ESLint and Prettier that work hand-in-hand to ensure the best formatting and structure of your code.
