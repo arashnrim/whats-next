@@ -1,2 +1,4 @@
-*.{js,ts,json,yml} linguist-detectable=false
-src/* linguist-detectable=true
+*.{js,ts,mjs,cjs,json,yml} linguist-detectable=false
+.husky/**/* linguist-detectable=false
+.yarn/**/* linguist-detectable=false
+public/**/* linguist-detectable=false
