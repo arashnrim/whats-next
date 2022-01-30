@@ -1,4 +1,4 @@
-*.{js,ts,mjs,cjs,json,yml} linguist-detectable=false
-.husky/**/* linguist-detectable=false
-.yarn/**/* linguist-detectable=false
-public/**/* linguist-detectable=false
+*.{js,ts,mjs,cjs,json,yml} linguist-vendored
+.husky/**/* linguist-vendored
+.yarn/**/* linguist-vendored
+public/**/* linguist-vendored
