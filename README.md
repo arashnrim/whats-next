@@ -11,17 +11,17 @@ In comparison to the as-is project bootstrapped directly with the `create-next-a
 >
 > If you wish to run the `lint` script manually, you will need to pass in the path to the directory or file you wish for ESLint to lint. This is different from the usual behaviour, which invokes `next lint` that automatically passes in the appropriate paths to lint.
 
-- ESLint is configured with Husky via `lint-staged` — this allows you to commit your files without worrying about running ESLint manually beforehand; before committing, `lint-staged` will run ESLint to fix any fixable errors in your code. To ensure Husky is working, be sure to run Husky (`yarn husky` or equivalent) beforehand.
+- ESLint is configured with Husky via `lint-staged` — this allows you to commit your files without worrying about running ESLint manually beforehand; before committing, `lint-staged` will run ESLint to fix any fixable errors in your code. To ensure Husky is working, be sure to run Husky (`pnpm husky` or equivalent) beforehand.
 
 > **Important!**
 >
-> The default package manager assumed here is Yarn. If you are using `npm`, you may need to change the Husky pre-commit (`.husky/_/pre-commit`) hook to use `npm` by replacing `yarn` with `npx` like so:
+> The default package manager assumed here is pnpm. If you are using `npm`, you may need to change the Husky pre-commit (`.husky/_/pre-commit`) hook to use `npm` by replacing `pnpm` with `npx` like so:
 >
 > ```bash
 > npx lint-staged
 > ```
 
-- The `berry` version of Yarn has been employed as the default package manager. To learn more, visit [the documentation for Yarn](https://yarnpkg.com).
+- pnpm has been employed as the default package manager. To learn more, visit [the pnpm website](https://pnpm.io).
 
 - If using [Vercel](https://vercel.com), the [vercel.json](https://github.com/arashnrim/whats-next/blob/main/vercel.json) file silences the bot. You will not receive notifications from the bot as it will not comment on commits and pull requests.
 
@@ -38,7 +38,7 @@ First, run the development server:
 ```bash
 npm run dev
 # or
-yarn dev
+pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
